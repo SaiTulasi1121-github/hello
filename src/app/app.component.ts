@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello';
+  text="Angular"
+  updateValue(e){
+    this.text=e.target.value;
+    console.log(e.target.value);
+  }
 }
